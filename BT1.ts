@@ -17,10 +17,12 @@ function insertionSort(arr) {
     for (let i = 1; i < arr.length; i++) {
         for (let j = i; j > 0; j--) {
             if (arr[j] < arr[j - 1]) {
+                console.log("Hoán đổi " + arr[i] + " với " + arr[i - 1])
                 let index = arr[j];
                 arr[j] = arr[j - 1];
                 arr[j - 1] = index
                 // [arr[j], arr[j - 1]] = [arr[j - 1], arr[j]];
+                console.log(`minh hoa các bước chèn${arr}`)
             }
         }
     }
